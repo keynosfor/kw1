@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Форма приема информации об учениках</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Форма приема информации об учениках</h1>
+	</header>
+	<main>
+		<form id="form">
+			<div>
+				<label for="fio">ФИО ученика:</label>
+				<input type="text" id="fio" required>
+			</div>
+			<div>
+				<label for="address">Адрес ученика:</label>
+				<input type="text" id="address" required>
+			</div>
+			<div>
+				<label for="class">№ класса ученика:</label>
+				<input type="text" id="class" required>
+			</div>
+			<div>
+				<label for="olympiad">Участие в олимпиадах:</label>
+				<input type="checkbox" id="olympiad">
+			</div>
+			<button type="submit">Добавить ученика</button>
+			<button type="button" id="clear">Очистить форму</button>
+			<div>
+				<label for="delete">Удалить запись:</label>
+				<select id="delete"></select>
+				<button type="button" id="deleteBtn">Удалить</button>
+			</div>
+			<button type="button" id="addProperty">Добавить новое свойство</button>
+			<button type="button" id="viewStudents">Просмотр учеников</button>
+			<button type="button" id="viewNonOlympiad">Не олимпиадники</button>
+		</form>
+		<div id="tableContainer"></div>
+	</main>
+	<script src="js/app.js"></script>
+</body>
+</html>
